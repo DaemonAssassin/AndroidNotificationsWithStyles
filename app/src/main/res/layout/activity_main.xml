@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:id="@+id/btn_big_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Big Text Style"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_inbox_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inbox Style"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_big_text_style"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/btn_big_text_style"
+        app:layout_constraintTop_toBottomOf="@id/btn_big_text_style" />
+
+    <Button
+        android:id="@+id/btn_big_picture_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Big Picture Style"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/btn_big_text_style"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/btn_big_text_style"
+        app:layout_constraintTop_toBottomOf="@id/btn_inbox_style" />
+
+    <Button
+        android:id="@+id/btn_progress_bar_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ProgressBar Style"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/btn_big_text_style"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/btn_big_text_style"
+        app:layout_constraintTop_toBottomOf="@id/btn_big_picture_style" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_indeterminate_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_progress_bar_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_progress_bar_style"
+        app:layout_constraintTop_toBottomOf="@+id/btn_big_picture_style"
+        app:srcCompat="@drawable/like" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
